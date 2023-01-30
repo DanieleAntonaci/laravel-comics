@@ -179,3 +179,124 @@ header {
         }
     }
 }
+#poster {
+    position: relative;
+    background: #1c1c1c;
+    height: 70px;
+    background-color: $primaryColor;
+    .my_comic {
+        @include container;
+        width: 100%;
+        @include center("onlyFlex");
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        img {
+            padding: 10px 20px;
+            position: absolute;
+            top: -250px;
+        }
+    }
+}
+
+#info_comic {
+    #plot {
+        @include center("bt-center");
+        @include container;
+        margin: 50px auto;
+
+        .plot_left {
+            margin-right: 50px;
+            h2 {
+                color: #003f5e;
+            }
+            .my_price {
+                width: 100%;
+
+                background-color: #55ba59;
+                color: #acf17e;
+                margin: 20px 0;
+
+                span {
+                    color: white;
+                }
+
+                @include center("bt-center");
+                padding: 0 20px;
+
+                .my_availabile {
+                    @include center("onlyFlex");
+
+                    .my_availabile-left {
+                        padding: 15px 20px;
+                        border-right: 1px solid black;
+                    }
+                    .my_availabile-right {
+                        padding: 15px 0;
+                        margin-left: 20px;
+                    }
+                }
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+        .plot_right {
+            h4 {
+                text-align: end;
+                font-size: 12px;
+            }
+        }
+    }
+    .about_comic {
+        min-height: 400px;
+        background-color: #f6f6f6;
+        padding: 50px 0;
+        color: #0e496b;
+        border-top: 1px solid lightgray;
+        .my_container {
+            @include container;
+            @include center("onlyFlex");
+            .my_artists {
+                width: 60%;
+                padding-right: 20px;
+                & > h4,
+                & > div {
+                    border-bottom: 1px solid lightgrey;
+                    padding: 10px 0;
+                }
+                h4 {
+                    padding-bottom: 30px;
+                }
+                .my_artist {
+                    @include center("bt");
+                    & > div {
+                        width: 80%;
+                        color: #37bbe2;
+                    }
+                }
+            }
+            .my_specs {
+                width: 35%;
+                padding-right: 20px;
+                & > h4,
+                & > div {
+                    border-bottom: 1px solid lightgrey;
+                    padding: 10px 0;
+                }
+                h4 {
+                    padding-bottom: 30px;
+                }
+                .my_spec {
+                    @include center("bt");
+                    & > div {
+                        width: 65%;
+                    }
+                    .my_series {
+                        color: #37bbe2;
+                    }
+                }
+            }
+        }
+    }
+}
