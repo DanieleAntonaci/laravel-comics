@@ -9,5 +9,10 @@
         justify-content: center;
         align-items: center;
     } @else if $type == "onlyFlex" {
+    } @else if $type == "bt" {
+        justify-content: space-between;
+    } @else if $type == "bt-center" {
+        justify-content: space-between;
+        align-items: center;
     }
 }

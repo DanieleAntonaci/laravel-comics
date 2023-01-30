@@ -1,1 +1,48 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./partials/variables";
+@import "./partials/mixin";
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+
+    .my_container {
+        margin: 0 auto;
+        max-width: 1200px;
+        @include center("bt-center");
+        img {
+            height: 80px;
+        }
+
+        ul {
+            @include center("both");
+
+            li {
+                padding: 0 10px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 14px;
+                    padding-bottom: 37px;
+                }
+
+                & :hover,
+                & .active {
+                    color: #0282f9;
+                    border-bottom: 5px solid #0282f9;
+                }
+            }
+        }
+    }
+}
