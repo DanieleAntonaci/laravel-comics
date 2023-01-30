@@ -22,24 +22,27 @@ header {
             height: 80px;
         }
 
-        ul {
-            @include center("both");
+        nav {
+            padding-top: 15px;
+            ul {
+                @include center("both");
 
-            li {
-                padding: 0 10px;
+                li {
+                    padding: 0 10px;
 
-                a {
-                    color: black;
-                    text-decoration: none;
-                    font-weight: 600;
-                    font-size: 14px;
-                    padding-bottom: 37px;
-                }
+                    a {
+                        color: black;
+                        text-decoration: none;
+                        font-weight: 600;
+                        font-size: 14px;
+                        padding-bottom: 37px;
+                    }
 
-                & :hover,
-                & .active {
-                    color: #0282f9;
-                    border-bottom: 5px solid #0282f9;
+                    & :hover,
+                    & .active {
+                        color: #0282f9;
+                        border-bottom: 5px solid #0282f9;
+                    }
                 }
             }
         }
