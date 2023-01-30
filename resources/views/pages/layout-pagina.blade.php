@@ -1,5 +1,7 @@
-@extends('pages.welcome')
+@extends('welcome')
 
-@section('nav-bar')
-    <h1>giorno</h1>
+@section('header')
+   <div>
+    
+   </div>
 @endsection

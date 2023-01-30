@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    @yield('nav-bar')
+    @yield('header')
 </body>
 
 </html>
