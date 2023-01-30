@@ -2,11 +2,12 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-@include('components.head')
+    @yield('head')
 </head>
 
 <body>
-    @yield('header')
+    @include('components.header')
+    @include('components.footer')
 </body>
 
 </html>

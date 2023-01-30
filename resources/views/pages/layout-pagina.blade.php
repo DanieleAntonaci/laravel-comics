@@ -1,30 +1,19 @@
 @extends('layout.app')
 
-@section('header')
+@section('head')
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<header>
-   <div class="my_container">
+<title>Laravel-comics</title>
 
-      <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="logo">
+<!-- Fonts -->
+<link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-     <nav>
-            <ul >
-               <li><a href="#">CHARACTERS</a> </li>
-               <li><a href="#">COMICS</a> </li>
-               <li><a href="#">MOVIE</a> </li>
-               <li><a href="#">TV</a> </li>
-               <li><a href="#">GAMES</a> </li>
-               <li><a href="#">COLLECTIBLES</a> </li>
-               <li><a href="#">VIDEOS</a> </li>
-               <li><a href="#">FANS</a> </li>
-               <li><a href="#">NEWS</a> </li>
-               <li><a href="#">SHOP</a> </li>
-            </ul>
-     </nav>
+<!-- Styles -->
+@vite('resources/js/app.js')
 
-      <div>
-         <input type="search" name="search">
-      </div>
-   </div>
- </header>
-   @endsection
+@endsection
+
+
+

@@ -16,3 +16,8 @@
         align-items: center;
     }
 }
+
+@mixin container {
+    margin: 0 auto;
+    max-width: 1200px;
+}

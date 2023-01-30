@@ -16,8 +16,7 @@ header {
     z-index: 900;
 
     .my_container {
-        margin: 0 auto;
-        max-width: 1200px;
+        @include container;
         @include center("bt-center");
         img {
             height: 80px;
@@ -42,6 +41,81 @@ header {
                     color: #0282f9;
                     border-bottom: 5px solid #0282f9;
                 }
+            }
+        }
+    }
+}
+
+#navSection {
+    background-image: url("/resources/img/footer-bg.jpg");
+    padding: 0;
+    height: 400px;
+    .my_container {
+        @include center("bt");
+        @include container;
+
+        & .linkFooter {
+            @include center("onlyFlex");
+            height: 400px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 10px 0;
+
+            & h3 {
+                color: $secondaryColor;
+                padding: 15px 0;
+                font-size: 17px;
+            }
+            ul {
+                padding-left: 0;
+            }
+
+            & ul li a {
+                color: rgb(150, 150, 150);
+                font-size: 13px;
+                text-decoration: none;
+                line-height: 25px;
+                padding-right: 30px;
+            }
+        }
+
+        .img-footer {
+            height: 400px;
+            overflow: hidden;
+
+            & img {
+                object-position: 0 -100px;
+            }
+        }
+    }
+}
+#footerSocial {
+    background-color: #303030;
+    height: 100px;
+    padding: 20px;
+    z-index: 20;
+    .my_container {
+        @include container;
+        @include center("bt");
+
+        button {
+            color: $secondaryColor;
+            background-color: #303030;
+            box-shadow: none;
+            border: $primaryColor 2px solid;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+
+        div {
+            @include center("horizontal");
+
+            h3 {
+                color: $primaryColor;
+            }
+
+            a {
+                padding-left: 15px;
             }
         }
     }
