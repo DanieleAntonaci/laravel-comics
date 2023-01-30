@@ -1,17 +1,17 @@
-@extends('layout.app')
+@extends('layout.main-layout')
 
 @section('head')
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<title>Laravel-comics</title>
+   <title>Laravel-comics</title>
 
-<!-- Fonts -->
-<link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+   <!-- Fonts -->
+   <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- Styles -->
-@vite('resources/js/app.js')
+   <!-- Styles -->
+   @vite('resources/js/app.js')
 
 @endsection
 
@@ -32,7 +32,7 @@
       <div class="my_card">
          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI" alt="comic book">
          
-         <a href="#">Action Comics</a>
+         <a href="comics">Action Comics</a>
       </div>
       <div class="my_card">
          <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/AV1976_01_300-001_HD_5f738f6e39ddd7.18205602.jpg?itok=VgdYdJ01" alt="comic book">

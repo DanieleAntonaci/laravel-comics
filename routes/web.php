@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('pages.layout-pagina');
+    return view('pages.app');
 });
+Route::get('/comics', function () {
+    return view('pages.comics');
+});
+
