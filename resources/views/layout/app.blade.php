@@ -7,6 +7,8 @@
 
 <body>
     @include('components.header')
+    @yield('jumbotron')
+    @yield('current-series')
     @include('components.footer')
 </body>
 
